@@ -45,3 +45,4 @@ Images
 ![alt tag](https://raw.githubusercontent.com/mazzastar/InstagramClone/master/instagramclone/spec/img/Sam.jpg)
 ![My image](mazzastar.github.com/InstagramClone/master/instagramclone/spec/img/Sam.jpg)
 ![alt tag](https://raw.githubusercontent.com/mazzastar/InstagramClone/master/instagramclone/spec/img/Sam.jpg)
+![](instagramclone/spec/img/Sam.jpg)
