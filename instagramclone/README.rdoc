@@ -5,8 +5,6 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
 * System dependencies
 
 * Configuration
@@ -26,3 +24,22 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+Instagram
+=========
+This is a clone of Instagram built using Rails
+
+
+Model
+======
+Users and Posts are the currently implemented models
+
+
+Gems of note
+=============
+Cucumber, RSpec, Devise
+
+
+Images
+![Alt text](https://raw.githubusercontent.com/mazzastar/InstagramClone/master/instagramclone/spec/img/Sam.jpg "My Nephew")
