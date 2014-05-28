@@ -42,4 +42,4 @@ Cucumber, RSpec, Devise
 
 
 Images
-![Alt text](https://raw.githubusercontent.com/mazzastar/InstagramClone/master/instagramclone/spec/img/Sam.jpg "My Nephew")
+![alt tag](https://raw.githubusercontent.com/mazzastar/InstagramClone/master/instagramclone/spec/img/Sam.jpg)
