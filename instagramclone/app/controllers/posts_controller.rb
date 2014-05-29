@@ -5,13 +5,10 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@post= Post.new
-		# @user=current_user	
+		@post = Post.new
 	end
 
 	def create
-		# puts params[:post].inspect
-		# @post = Post.create(params[:post].permit(:title, :caption))
 		@post = current_user.posts.create(params[:post].permit(:title, :caption, :picture))
 		redirect_to '/posts'
 	end

@@ -1,29 +1,41 @@
-
-<% if user_signed_in? %>
+<div class="jumbotron">
 
 <h1>Welcome to the Instagram Clone</h1>
 
-<p class="navbar-text pull-right">
-  Logged in as <strong>Welcome <%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> | 
-  <%= link_to "New Post", new_post_path, :class => 'navbar-link' %>
+</div>
 
+<!-- <p class="navbar-text pull-right"> -->
+<% if user_signed_in? %>
+
+  Logged in as <strong>Welcome <%= current_user.email %></strong>.
+
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-lg btn-success' %> 
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-lg btn-success'  %> 
+  <%= link_to "New Post", new_post_path, :class => 'btn btn-lg btn-success'%>
+ 
 <% if @posts.any? %>
 	
 	<% @posts.each do |post| %>
+  <div class='col-md-4'>
 		<h2><%= post.title %></h2>
     <p> <%= post.caption %> </p>
     <%= image_tag post.picture.url(:medium), class:'uploaded-pic'%>
+    <br/>
     <%= link_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
-	<% end %>
-	</h2>
+	</div>
+
+  <% end %>
+	
 <% else %> 
-  <p>There are no posts yet<p>
+  <p>There are no posts yet</p>
 <% end %>
 
 <% else %>
-  <h1>Not signed in <h1>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+
+    <h1>Not signed in </h1>
+
 <% end %>
+
+<!-- </p> -->

@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+.jumbotron{
+	background: image-url('beauty.jpg');
+}
+
+.jumbotron .container {
+	background: rbga(255,255,255,0.85);
+	padding: 30px 50px;
+
+}
