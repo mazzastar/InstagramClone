@@ -1,0 +1,500 @@
+   73  ls
+   74  mkdir test
+   75  cd test
+   76  bin/rails
+   77  ls -a
+   78  cd ,,
+   79  cd ..
+   80  ls
+   81  cd yelpmarch
+   82  ls -a
+   83  subl .gitignore
+   84  cd ..
+   85  ls
+   86  cd ..
+   87  ls
+   88  cd wk9
+   89  ls
+   90  bin/rake routes
+   91  pwd
+   92  cd I*
+   93  ls
+   94  cd i*
+   95  bin/rake routes
+   96  cucumber
+   97  cucumber
+   98  cucumber
+   99  cucumber
+  100  cucumber
+  101  cucumber
+  102  bin/rake routes
+  103  cucumber
+  104  bin/rails server
+  105   bin/rake db:migrate RAILS_ENV=development
+  106   bin/rake db:migrate RAILS_ENV=development
+  107  bin/rails server
+  108  cucumber
+  109  bin/rails server
+  110  bin/rails server
+  111  bin/rails server
+  112  cucumber
+  113  bin/rails server
+  114  cucumber
+  115  cucumber
+  116  cucumber
+  117  cucumber
+  118  bin/rails server
+  119  cucumber
+  120  cucumber
+  121  cucumber
+  122  cucumber
+  123  cucumber
+  124  cucumber
+  125  cucumber
+  126  bin/rake routes
+  127  ls
+  128  cucumber
+  129  bin/rails server
+  130  bin/rails server
+  131  bin/rails server
+  132  psql
+  133  bin/rails server
+  134  bin/rails server
+  135  psql
+  136  psql
+  137  cucumber
+  138  cucumber
+  139  cucumber
+  140  cucumber
+  141  cucumber
+  142  pwd
+  143  cd ..
+  144  ls
+  145  cd ..
+  146  ls
+  147  mkdir wk9
+  148  cd wk9
+  149  ls
+  150  git clone git@github.com:mazzastar/InstagramClone.git
+  151  cd I*
+  152  ls
+  153  bin/rails new instagram -T -d postgresql
+  154  pwd
+  155  ls
+  156  bin/rails
+  157  rails new instagramclone -T -d postgresql
+  158  bin/rails
+  159  bundle install
+  160  ls
+  161  cd ins*
+  162  ls
+  163  bundle install
+  164  ls
+  165  subl .
+  166  ls bin/
+  167  cat rails
+  168  ls
+  169  cd bin/
+  170  cat rails 
+  171  pwd
+  172  cd ..
+  173  ls
+  174  git add ,
+  175  pwd
+  176  pwd
+  177  cd ..
+  178  ls
+  179  git add ,
+  180  cd in*
+  181  git add .
+  182  git commit -m "initialised rails app"
+  183  git push 
+  184  ls
+  185  bundle
+  186  bundle
+  187  bundle
+  188  bundle
+  189  bin/rails g rspec:install
+  190  bin/rails g cucumber:install
+  191  git add .
+  192  git commit -m " added cucumber"
+  193  git push
+  194  bin/rake db:create
+  195  bin/rake db:create RAILS_ENV=test
+  196  bin/rake db:migrate
+  197  bin/rake db:migrate RAILS_ENV=test
+  198  rspec
+  199  bundle
+  200  rspec
+  201  bin/rails server
+  202  cucumber
+  203  cucumber
+  204  cucumber
+  205  cucumber
+  206  cucumber
+  207  cucumber
+  208  cucumber
+  209  bin/rails g controller posts
+  210  cucumber
+  211  cucumber
+  212  cucumber
+  213  cucumber
+  214  pwd
+  215  ls
+  216  cd app
+  217  cd view
+  218  cd view*
+  219  ls
+  220  cd layouts
+  221  ls
+  222  mv index* ../posts
+  223  cd ..
+  224  pwd
+  225  cd ..
+  226  cd ..
+  227  ls
+  228  cucumber
+  229  cucumber
+  230  cucumber
+  231  cucumber
+  232  cucumber
+  233  cucumber
+  234  cucumber
+  235  cucumber
+  236  cucumber
+  237  cucumber
+  238  cucumber
+  239  cucumber
+  240  bin/rails g devise User
+  241  bin/rake db:migrate
+  242  bin/rake db:migrate RAILS_ENV=test
+  243  bin/rails server
+  244  bin/rails server
+  245  cucumer
+  246  cucumber
+  247  cucumber
+  248  cucumber
+  249  bin/rails server
+  250  bin/rails server
+  251  cucumber
+  252  cucumber
+  253  cucumber
+  254  cucumber
+  255  cucumber
+  256  cucumber
+  257  bin/rails server
+  258  bin/rails server
+  259  cucumber
+  260  cucumber
+  261  cucumber
+  262  cucumber
+  263  cucumber
+  264  cucumber
+  265  cucumber
+  266  cucumber
+  267  cucumber
+  268  cucumber
+  269  cucumber
+  270  cucumber
+  271  cucumber
+  272  cucumber
+  273  bin/rails server
+  274  cucumber
+  275  cucumber
+  276  cucumber
+  277  bin/rails server
+  278  bin/rails g controller home index
+  279  bin/rails server
+  280  bin/rails server
+  281  cucumber
+  282  git add .
+  283  git commit -m "Added users"
+  284  git push
+  285  bin/rails g model post title:string caption:text image_url:string
+  286  bin/rake db:migrate
+  287  bin/rake db:migrate RAILS_ENV=test
+  288  psql
+  289  bin/rake db:migrate
+  290  bin/rake db:migrate RAILS_ENV=test
+  291  psql
+  292  bin/rake db:migrate
+  293  bin/rails g migration AddUserIdToPosts user: belongs_to
+  294  bin/rake db:migrate RAILS_ENV=test
+  295  psql
+  296  bin/rake db:rollback
+  297  psql
+  298  bin/rails g migration AddUserIdToPosts user :belongs_to
+  299  bin/rails g migration AddUserIdToPosts user :belongs_to --force
+  300  psql
+  301  bin/rake db:rollback RAILS_ENV=test
+  302  psql
+  303  psql
+  304  bin/rake db:create RAILS_ENV=test
+  305  bin/rake db:migrate RAILS_ENV=test
+  306  bin/rake db:migrate RAILS_ENV=test
+  307  bin/rails server
+  308  pwd
+  309  pwd
+  310  ls
+  311  cd wk8
+  312  ls
+  313  cd y*
+  314  ls
+  315  bin/rails server
+  316  bin/rails server
+  317  subl.
+  318  subl .
+  319  psql
+  320  subl .
+  321  pwd
+  322  git remote
+  323  git remote add mark git@github.com:mazzastar/Week8Test.git
+  324  git push -u mark master
+  325  git status
+  326  git add .
+  327  git add --all
+  328  git commit -m "Answers"
+  329  git push -u mark master
+  330  git add --all
+  331  git commit -m "Answers"
+  332  git push -u mark master
+  333  cd ..
+  334  pwd
+  335  cd ..
+  336  cd wk8
+  337  ls
+  338  git clone git@github.com:mazzastar/Questions.git
+  339  cd Q*
+  340  ls
+  341  pwd
+  342  rails new questionsSite -T -d postgresql
+  343  ls
+  344  cd ques*
+  345  ls
+  346  subl .
+  347  bundle install
+  348  bundle install
+  349  bundle
+  350  bin/rails server
+  351    679  bin/rails generate rspec:install
+  352  bin/rails generate rspec:install
+  353  rspec
+  354  bin/rake db:create
+  355  bin/rake db:migrate
+  356  psql
+  357    bin/rake db:create RAILS_ENV=test
+  358  bin/rake db:migrate RAILS_ENV=test
+  359  psql
+  360  ls
+  361  rspec
+  362  bin/rails server
+  363  bin/rake routes
+  364  rspec
+  365  rspec
+  366  bin/rails g controller questions
+  367  rspec
+  368  bin/rake routes
+  369  bin/rake routes
+  370  rspec
+  371  rspec
+  372  rspec
+  373  bin/rake routes
+  374  bin/rails server
+  375  rsepc
+  376  rspec
+  377  rspec
+  378  rspec
+  379  rspec
+  380  bin/rails server
+  381  bin/rake routes
+  382  rspec
+  383  rspec
+  384  rspec
+  385  rspec
+  386  ls
+  387  pwd
+  388  pwd
+  389  rspec
+  390  rspec
+  391  rspec
+  392  rspec
+  393  rspec
+  394  bin/rails server
+  395  rspec
+  396  rspec
+  397  rspec
+  398  bin/rails server
+  399  bin/rails g model question questiontext:text answer:boolean
+  400  bin/rake db:migrate
+  401  psql
+  402  rspec
+  403  rspec
+  404  rspec
+  405  rspec
+  406  bin/rails server
+  407  rspec
+  408  rspec
+  409  rspec
+  410  rspec
+  411  bin/rails server
+  412  rspec
+  413  rspec
+  414  rspec
+  415  rspec
+  416  rspec
+  417  rspec
+  418  rspec
+  419  rspec
+  420  bin/rails server
+  421  bin/rails server
+  422  psql
+  423  psql
+  424  bin/rails server
+  425  vim
+  426  vim
+  427  ls
+  428  pwd
+  429  cd ..
+  430  ls
+  431  cd Ins*
+  432  bin/rails
+  433  cd ..
+  434  cd ..
+  435  pwd
+  436  cd wk9
+  437  ls
+  438  mkdir twitterclone
+  439  cd twi*
+  440  rails new twitter
+  441  ls
+  442  ls
+  443  pwd
+  444  ls
+  445  rm twitter
+  446  rm -d twitter
+  447  rm -v twitter
+  448  rm -help
+  449  rm --help
+  450  rm -d twitter
+  451  rm -R twitter
+  452  ls
+  453  pwd
+  454  rails new twitterClone -T -d postgresql
+  455  ls
+  456  cd twiiter*
+  457  ls
+  458  cd tw*
+  459  ls
+  460  rm public/index.html.erb
+  461  subl 
+  462  subl .
+  463  ls
+  464  rails g controller home index
+  465  pwd
+  466  bin/rails server
+  467  bin/rake db:create 
+  468  bin/rake db:migrate
+  469  bin/rails server
+  470  bundle install
+  471  bin/rails foundation:install
+  472  bin/rails zurb-foundation:install
+  473  bin/rails foundation: install
+  474  bin/rails foundation:install
+  475  bin/rails g foundation:install
+  476  ls
+  477  bin/rails g foundation:install
+  478  bundle install
+  479  bin/rails g foundation:install
+  480  bundle install
+  481  bin/rails g devise:install
+  482  bin/rails g devise User
+  483  bin/rake db:migrate
+  484  bin/rails server
+  485  bundle install
+  486  bundle install
+  487  bundle install
+  488  bin/rails g socialization -s
+  489  bin/rails g controller users index show
+  490  rails g migration add_name_to_users name:string
+  491  bin/rake db:migrate
+  492  bin/rails g scaffold post user_id:integer content:text
+  493  bin/rake db:migrate
+  494  bin/rails g migrate
+  495  bin/rake db:migrate
+  496  bin/rails server
+  497  psql
+  498  bin/rails server
+  499  git add .
+  500  git status
+  501  git add .
+  502  git add --all
+  503  git commit -m "Adjusted html to correct layout"
+  504  git push
+  505  cucumber
+  506  cucumber
+  507  cucumber
+  508  cucumber
+  509  cucumber
+  510  cucumber
+  511  bin/rails g model hashtag
+  512  cucumber
+  513  bin/rake db:migrate
+  514  bin/rake db:migrate RAILS_ENV=test
+  515  cucumber
+  516  cucumber
+  517  cucumber
+  518  cucumber
+  519  cucumber
+  520  cucumber
+  521  bin/rake db:migrate RAILS_ENV=test
+  522  cucumber
+  523  cucumber
+  524  cucumber
+  525  cucumber
+  526  bin/rails server
+  527  cucumber
+  528  cucumber
+  529  cucumber
+  530  bin/rails server
+  531  cucumber
+  532  cucumber
+  533  bin/rails server
+  534  psql
+  535  bin/rails g migration CreateJoinTablePostsTags post tag
+  536  bin/rake db:migrate
+  537  bin/rake db:migrate RAILS_ENV=test
+  538  bin/rails server
+  539  psql
+  540  bin/rake drop_table posts_tags
+  541  bin/rails drop_table posts_tags
+  542  bin/rails g migration drop_posts_tags
+  543  bin/rake db:migrate
+  544  bin/rake db:migrate RAILS_ENV=test
+  545  bin/rails g migration CreateJoinTablePostsHashtags post hashtag
+  546  bin/rake db:migrate RAILS_ENV=test
+  547  bin/rake db:migrate
+  548  bin/rails server
+  549  git add .
+  550  bin/rails server
+  551  cucumber
+  552  rspec
+  553  bundle install
+  554  rspec
+  555  rspec
+  556  rspec
+  557  rspec
+  558  rspec
+  559  [A
+  560  rspec
+  561  rspec
+  562  rspec
+  563  rspec
+  564  rspec
+  565  rspec
+  566  rspec
+  567  bin/rails c
+  568  rspec
+  569  rspec
+  570  rspec
+  571  history
+  572  history > recent.txt

@@ -32,6 +32,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
+  gem 'factory_girl_rails'
 end
 
 gem 'bootstrap-sass'
@@ -39,6 +40,7 @@ gem 'mustache'
 gem 'devise'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
