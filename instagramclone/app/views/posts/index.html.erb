@@ -1,36 +1,51 @@
-<div class="jumbotron">
-
-<h1>Welcome to the Instagram Clone</h1>
-
-</div>
+<header class="jumbotron">
+  <div class="page-header">
+    <h1>Welcome to the Instagram Clone</h1>
+  </div>
+</header>
 
 <!-- <p class="navbar-text pull-right"> -->
 <% if user_signed_in? %>
+  <div class="navbar-text pull-right">
+    Logged in as <strong>Welcome <%= current_user.email %></strong>.
+    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-lg btn-success' %> 
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-lg btn-success'  %> 
+    <%= link_to "New Post", new_post_path, :class => 'btn btn-lg btn-success'%>
+  </div>
 
-  Logged in as <strong>Welcome <%= current_user.email %></strong>.
-
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-lg btn-success' %> 
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-lg btn-success'  %> 
-  <%= link_to "New Post", new_post_path, :class => 'btn btn-lg btn-success'%>
- 
-<% if @posts.any? %>
-	
-	<% @posts.each do |post| %>
-  <div class='col-md-4'>
-		<h2><%= post.title %></h2>
-    <p> <%= post.caption %> </p>
-    <p> <%= post.tag_names %> </p>
-    <%= image_tag post.picture.url(:medium), class:'uploaded-pic'%>
-    <br/>
-    <%= link_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
-	</div>
-
-  <% end %>
-	
-<% else %> 
-  <p>There are no posts yet</p>
-<% end %>
-
+  <section class = "navbar-text pull-left">
+    <% if @posts.any? %>
+      <% @posts.each_slice(3).to_a.each_with_index do |postrow, i|%>
+        <div class ="row" id=<%="#{i}"%> >
+        	<% postrow.each do |post| %> 
+                <article class='col-md-4'>
+                  <header>
+                    <h2><%= post.title %></h2>
+                    <p> <%= post.updated_at %> </p>
+                  </header>
+                  <p> <%= post.tag_names %> </p>
+                  <div>
+                    <p><%= image_tag post.picture.url(:medium), class:'uploaded-pic'%></p>
+                  </div>
+                  <p> <%= post.caption %> </p>
+                  <p>
+                    <% post.hashtags.each do |tag| %>
+                     <%= link_to tag.name, "#{tag.name}"%> 
+                    <% end %>
+                  </p>
+                  <footer>
+                    <%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
+                  </footer>    
+                </article>
+        
+          <% end %>
+        </div>
+      <% end %>
+  	
+    <% else %> 
+      <p>There are no posts yet</p>
+    <% end %>
+  </section>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>

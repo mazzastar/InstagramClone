@@ -4,53 +4,28 @@
   <title>Instagramclone</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
   <%= csrf_meta_tags %>
 </head>
 
-
 <body>
-
   <div class="container">
-
-
-      <!-- <div class="jumbotron"> -->
-        <!-- <h1>InstaClone</h1> -->
-        <!-- <p class="lead">A clone of Instagram using RoR</p> -->
-      <!-- </div> -->
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-     <!--      <h4>Subheading</h4>
-          <p></p>
-
-     -->
-      	</div>
-	  	
-  	  	<div class='col-lg-12'>
-  	  		<%= yield %>
-  	  	</div>
-      </div> 
-
-
-
-        <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
-        <% end %>
-        <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
-        <% end %>
-        <footer>
-          <p>&copy; Makers 2014</p>
-        </footer>
+    <div class="row marketing">
+    </div> 
+    <div class='col-lg-12'>
+        <%= yield %>
+    </div>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    <footer>
+      <p>&copy; Makers 2014</p>
+    </footer>
   </div>
   
 </body>
-
- <!--      <div class="footer">
-        <p>&copy; Makers 2014</p>
-      </div> -->
 
 </html>
 

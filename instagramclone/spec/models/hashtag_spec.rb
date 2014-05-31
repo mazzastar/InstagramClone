@@ -1,5 +1,9 @@
 require 'spec_helper'
 
 describe Hashtag do
-  pending "add some examples to (or delete) #{__FILE__}"
+   it 'should be unique' do
+     Hashtag.create(name: '#yolo')
+     duplicate = Hashtag.new(name: '#yolo')
+     expect(duplicate).to have(1).error_on(:name)
+   end
 end

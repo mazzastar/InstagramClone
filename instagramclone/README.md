@@ -45,9 +45,3 @@ Images
 
 ![](instagramclone/spec/img/Sam.jpg)
 
-Timeline
----------
-
-|Event	   |Date    |
-|:---------|:------:|
-|Added Tags|30/5/14	|

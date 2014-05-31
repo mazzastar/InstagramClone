@@ -51,7 +51,7 @@ require 'spec_helper'
        it 'reuses tags if they exist' do
          post.tag_names = 'yolo'
          expect(Hashtag.count).to eq 1
-         expect(Hashtag.posts).to include post
+          expect(tag.posts).to include post
        end
      end
   end

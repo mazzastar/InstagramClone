@@ -13,7 +13,7 @@ Background: On the homepage with a photo
  And I attach "Picture" with "Sam.jpg"
 
 Scenario: The Post caption has no hashtags
-When I fill_in the "hashtags" area with "excellent party"
-And I click on the button "Leave Review"
+When I fill_in the "Hashtags" area with "excellent party"
+And I click on the button "Create Post"
 Then I should see link "#excellent"
 And I should see link "#party"
