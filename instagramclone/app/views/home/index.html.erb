@@ -7,8 +7,19 @@
 			<%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
 		<% else %>
 		  <h2> Please Login </h2>
-		  <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-lg btn-success'  %> 
-		  <%= link_to "Login", new_user_session_path, class: 'btn btn-lg btn-success'  %>
+			
+			<%= form_for(:user, :url => session_path(:user)) do |f| %>
+			  <%= f.text_field :email, :placeholder => "email"%>
+			  <%= f.password_field :password, :placeholder => "password"%>
+			  <%= f.check_box :remember_me %>
+			  <%= f.label :remember_me %>
+			  <%= f.submit 'Sign in', class: "btn btn-primary" %>
+			  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary"  %> 
+			  <%= link_to "Forgot your password?", new_password_path(:user) %>
+
+			<% end %>
+
+
 		<% end %>
 	</p>
 </div>

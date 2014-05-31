@@ -17,3 +17,9 @@ When I fill_in the "Hashtags" area with "excellent party"
 And I click on the button "Create Post"
 Then I should see link "#excellent"
 And I should see link "#party"
+
+Scenario: It can filter posts by tag
+	When I am signed in 
+	And I have a post called "Yolo1" and a photo "Sam.jpg"
+	And I have a post called "Yolo2" and a photo "Sam.jpg"
+	And I visit "/p"
