@@ -15,32 +15,7 @@
 
   <section class = "navbar-text pull-left">
     <% if @posts.any? %>
-      <% @posts.each_slice(3).to_a.each_with_index do |postrow, i|%>
-        <div class ="row" id=<%="#{i}"%> >
-        	<% postrow.each do |post| %> 
-                <article class='col-md-4'>
-                  <header>
-                    <h2><%= post.title %></h2>
-                    <p> <%= post.updated_at %> </p>
-                  </header>
-                  <p> <%= post.tag_names %> </p>
-                  <div>
-                    <p><%= image_tag post.picture.url(:medium), class:'uploaded-pic'%></p>
-                  </div>
-                  <p> <%= post.caption %> </p>
-                  <p>
-                    <% post.hashtags.each do |tag| %>
-                     <%= link_to tag.name, "#{tag.name}"%> 
-                    <% end %>
-                  </p>
-                  <footer>
-                    <%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
-                  </footer>    
-                </article>
-        
-          <% end %>
-        </div>
-      <% end %>
+      <%= render @posts %>
   	
     <% else %> 
       <p>There are no posts yet</p>

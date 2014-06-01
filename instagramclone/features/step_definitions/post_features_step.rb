@@ -43,3 +43,4 @@ end
 Then(/^I shoud see css "(.*?)"$/) do |arg1|
   expect(page).to have_css 'img.uploaded-pic'
 end
+
