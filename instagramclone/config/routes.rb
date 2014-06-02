@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-
   devise_for :users
   root 'home#index'
-  resources :posts do 
-    resources :users
+  resources :posts do
+    # resources :users
+    resources :likes
   end
   
   resources :hashtags

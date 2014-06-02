@@ -20,6 +20,11 @@ Given(/^I am signed in$/) do
   login_as user
 end
 
+Given(/^I am signed in as an existing user$/) do
+  user = User.find_by(email: 'alex@a.com')
+  login_as user
+end
+
 Then(/^I should see the link "(.*?)"$/) do |link|
   expect(page).to have_link(link)
 end

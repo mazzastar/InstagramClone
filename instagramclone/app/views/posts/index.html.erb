@@ -11,11 +11,16 @@
     <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-lg btn-success' %> 
     <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-lg btn-success'  %> 
     <%= link_to "New Post", new_post_path, :class => 'btn btn-lg btn-success'%>
+    
   </div>
 
   <section class = "navbar-text pull-left">
     <% if @posts.any? %>
-      <%= render @posts %>
+      <% @posts.in_groups_of(3, false) do |post_triplet| %>
+        <div class='row'>
+          <%= render post_triplet %>
+        </div>
+      <% end %>
   	
     <% else %> 
       <p>There are no posts yet</p>

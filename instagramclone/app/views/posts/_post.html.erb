@@ -15,7 +15,19 @@
                     <% end %>
                   </p>
                   <footer>
-                    <%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
+                    <% if post.user == current_user %>
+                      <%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
+                    <% end %>
+
+                    <% if post.likes.map{|like| like.user_id}.include?(current_user.id)%>
+                      <% like = post.likes.find_by(user_id: current_user.id) %>
+                      <%= link_to "♥ #{post.likes.count}", post_like_path(post.id, like), method: :delete, :class => 'btn btn-lg btn-default btn-like'%>
+                       
+                    <% else %>
+                      <%= link_to "♥ #{post.likes.count}", post_likes_path(post), method: :post, :class => 'btn btn-lg btn-default btn-like'%>
+                    <% end %>
+
                   </footer>    
                 </article>
         
+
