@@ -20,7 +20,7 @@ $(document).ready(function(){
 		return false;   
 
 
-	});
+	});	
 
 	$('.btn-unlike').on('click', function(event){
 		event.preventDefault();
