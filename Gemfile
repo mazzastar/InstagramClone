@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -32,6 +32,7 @@ gem 'devise'
 gem 'thin'
 gem 'websocket-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -40,6 +41,10 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
+end
+
+group :production do
+	gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password

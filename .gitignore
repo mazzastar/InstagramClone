@@ -1,1 +1,5 @@
 instagramclone/public/system/posts/*
+
+/tmp
+/log/*.log
+/config/secrets.yml
