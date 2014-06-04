@@ -13,19 +13,6 @@ Given I am signed in as an existing user
 When I visit "/posts"
 Then I should see the link "♥ 0"
 
-Scenario: A user clicks like on a post
-Given  I am signed in as an existing user
-And I visit "/posts"
-When I click on "♥ 0"
-Then I should not see the link "♥ 0" 
-And I should see the link "♥ 1"
-
-Scenario: A user can undo a like.
-Given  I am signed in as an existing user
-When I visit "/posts"
-And I click on "♥ 0"
-And I click on "♥ 1"
-Then I should see the link "♥ 0"
 
 Scenario: Another user can see a post that has been liked
 Given a post has been liked by "alex@a.com"
@@ -33,6 +20,25 @@ And I am logged in as "alex2@a2.com"
 When I visit "/posts"
 Then I should see the link "♥ 1"
 
+
+@ignore
+Scenario: A user clicks like on a post
+Given  I am signed in as an existing user
+And I visit "/posts"
+When I click on "♥ 0"
+Then I should not see the link "♥ 0" 
+And I should see the link "♥ 1"
+
+@ignore
+Scenario: A user can undo a like.
+Given  I am signed in as an existing user
+When I visit "/posts"
+And I click on "♥ 0"
+And I click on "♥ 1"
+Then I should see the link "♥ 0"
+
+
+@ignore
 Scenario: Another user can like a post that has been liked
 Given a post has been liked by "alex@a.com"
 And I am logged in as "alex2@a2.com"
@@ -40,6 +46,7 @@ When I visit "/posts"
 And I click on "♥ 1"
 Then I should see the link "♥ 2"
 
+@ignore
 Scenario: Another user can unlike a post that has been liked
 Given a post has been liked by "alex@a.com"
 And I am logged in as "alex2@a2.com"
