@@ -14,6 +14,11 @@ When(/^I click on "(.*?)"$/) do |arg1|
 	click_on arg1
 end
 
+When(/^I wait for "(.*?)" seconds$/) do |seconds|
+	sleep(seconds.to_i)
+	# p page.source
+end
+
 Given(/^a post has been liked by "(.*?)"$/) do |arg1|
 	user = User.find_by(email: arg1)
 	login_as user

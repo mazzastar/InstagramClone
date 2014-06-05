@@ -25,6 +25,7 @@ Feature: Instagram post page
  When I fill_in "Title" with "test1"
  And I fill_in "Caption" with "test2"
  And I attach "Picture" with "Sam.jpg"
+ And I fill_in "Address" with "25 City Road, London"
  And I click on the button "Create Post"
  Then I should see "test1"
  And I should see "test2"
