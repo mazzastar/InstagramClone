@@ -4,7 +4,8 @@ class LikesController < ApplicationController
   	@post.likes.create(user_id: current_user.id)
   	WebsocketRails[:likes].trigger 'new', {id: @post.id, new_like_count: @post.likes.count, like_id: @post.likes.last.id}
 
-  	 redirect_to '/posts'
+  	 # redirect_to '/posts'
+     render json: { status: 'success' }
   end
 
 
@@ -18,10 +19,10 @@ class LikesController < ApplicationController
   def destroy
   	@post = Post.find(params[:post_id])
   	@link = @post.likes.find_by(user_id: current_user.id)
-  	@link.destroy
+  	@link.destroy if @link
   	WebsocketRails[:likes].trigger 'new', {id: @post.id, new_like_count: @post.likes.count}
 
-  	redirect_to '/posts'
+  	render json: { status: 'success' }
   end
 end
 
