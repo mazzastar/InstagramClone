@@ -17,6 +17,8 @@
                   </p>
                   <footer>
                     <% if post.user == current_user %>
+                      <%= button_to "Edit", edit_post_path(post), method: :get%>
+                      <%= button_to "Show", post_path(post), method: :get%>
                       <%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
                     <% end %>
 
