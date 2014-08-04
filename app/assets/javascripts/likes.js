@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('body').on('click', '.btn-like', function(event){
+// <<<<<<< HEAD
 		event.preventDefault();
 		$.post(this.href);
 		console.log(this.href);
@@ -67,6 +68,26 @@ $(document).ready(function(){
 // 	channel.bind('new', function(post){
 // 		var postElement = $('.post[data-id='+post.id+ '] .btn-like')
 // 		postElement.text('♥ '+post.new_like_count);
+// =======
+// 		event.preventDefault();
+// 		$.post(this.href);
+// 		console.log(this.href);
+// 		$(this).removeClass('btn-like').addClass('btn-unlike');
+// 	});
+
+// 	$('body').on('click', '.btn-unlike', function(event){
+// 		event.preventDefault();
+// 		$.ajax({url: this.href + '/1', type: 'delete'});
+// 		$(this).removeClass('btn-unlike').addClass('btn-like');
+// 	});
+
+
+// 	var connection = new WebSocketRails(window.location.host + '/websocket');
+// 	channel = connection.subscribe('likes');
+// 	channel.bind('new', function(post){
+// 		var postElement = $('.post[data-id='+post.id+ '] .btn-like')
+// 		postElement.text('♥ '+post.new_like_count);
+// >>>>>>> ddd5e70bcf6e63e27fb6c25bacd084c8127b1f48
 	
 // 		// var postElement2 = $('.post[data-id='+post.id+ '] .btn-unlike')
 // 		postElement2.text('♥ '+post.new_like_count);

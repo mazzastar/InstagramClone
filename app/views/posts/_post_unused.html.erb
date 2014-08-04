@@ -3,10 +3,10 @@
           <% postrow.each do |post| %> 
                 <article class='col-md-4'>
                   <header>
-                    <h2><%= post.title %></h2>
-                    <p> <%= post.updated_at %> </p>
+                    <h2 class='title'><%= post.title %></h2>
+                    <p class='updatedAt'> <%= post.updated_at %> </p>
                   </header>
-                  <p> <%= post.tag_names %> </p>
+                  <p class='tags'> <%= post.tag_names %> </p>
                   <div>
                     <p><%= image_tag post.picture.url(:medium), class:'uploaded-pic'%></p>
                   </div>
