@@ -41,8 +41,8 @@ When(/^I click on the button "(.*?)"$/) do |button_name|
    click_on(button_name)
 end
 
-When(/^I attach "(.*?)" with "(.*?)"$/) do |fileType, filename|
-  attach_file 'Picture', Rails.root.join("./spec/img/#{filename}")
+When(/^I attach "(.*?)" with "(.*?)"$/) do |field, filename|
+  attach_file field, Rails.root.join("spec/img/#{filename}")
 end
 
 Then(/^I shoud see css "(.*?)"$/) do |arg1|

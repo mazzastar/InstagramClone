@@ -20,6 +20,8 @@ class Post < ActiveRecord::Base
 	end
 
 	def tag_names=(text)
+		puts "Hello there"
+		puts text
 		return if text.blank?
 
 		text.scan(/\w+/).each do |tagEntry| 	

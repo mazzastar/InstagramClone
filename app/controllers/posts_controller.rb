@@ -10,7 +10,8 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		@post = current_user.posts.create(params[:post].permit(:title, :caption, :picture, :tag_names))
+		puts params[:post]
+		@post = current_user.posts.create!(params[:post].permit(:title, :caption, :picture, :tag_names, :address))
 		redirect_to '/posts'
 	end
 
