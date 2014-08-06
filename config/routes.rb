@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  devise_for :admins
   root 'home#index'
 
   resources :posts do
@@ -13,5 +14,6 @@ Rails.application.routes.draw do
   end
   
   resources :hashtags
+  resources :orders
 
 end
