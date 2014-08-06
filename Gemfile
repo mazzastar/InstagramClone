@@ -33,6 +33,7 @@ gem 'thin'
 gem 'websocket-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :development, :test do
   gem 'rspec-rails'

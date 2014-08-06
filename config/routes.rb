@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :posts do
-    # resources :users
+    resources :charges
     resources :likes do 
       collection do 
         delete :destroy
