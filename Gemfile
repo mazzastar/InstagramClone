@@ -35,6 +35,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-collection_matchers'
@@ -43,6 +44,9 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
+  gem 'capybara-email'
+  gem 'mailcatcher'
+
 end
 
 group :production do
