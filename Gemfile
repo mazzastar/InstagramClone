@@ -45,7 +45,6 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
   gem 'capybara-email'
-  gem 'mailcatcher'
 
 end
 
