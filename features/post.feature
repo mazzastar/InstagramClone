@@ -9,27 +9,28 @@ Feature: Instagram post page
 
 
  Scenario: posting a photo for the first time
- Given I am signed in
- And I visit the homepage
- Then I should see the link "New Post"
+	 Given I am signed in
+	 And I visit the homepage
+	 Then I should see the link "New Post"
 
  Scenario: wanting to post a photo
- Given I am signed in 
- And I visit the homepage
- When I click on the link "New Post"
- Then I should see "New Post to Enter"
+	 Given I am signed in 
+	 And I visit the homepage
+	 When I click on the link "New Post"
+	 Then I should see "New Post to Enter"
 
  Scenario: entering in a new photo
- Given I am signed in
- And I visit "/posts/new"
- When I fill_in "Title" with "test1"
- And I fill_in "Caption" with "test2"
- And I attach "Picture" with "Sam.jpg"
- And I fill_in "Address" with "25 City Road, London"
- And I click on the button "Create Post"
- Then I should see "test1"
- And I should see "test2"
- And I shoud see css "img.uploaded-pic"
+	 Given I am signed in
+	 And I visit "/posts/new"
+	 When I fill_in "Title" with "test1"
+	 And I fill_in "Caption" with "test2"
+	 And I attach "Picture" with "Sam.jpg"
+	 And I fill_in "Address" with "25 City Road, London"
+	 And I click on the button "Create Post"
+	 Then I should see "test1"
+	 And I should see "test2"
+	 And I should see css "img.uploaded-pic"
+	 # And I should see  
 
 
 

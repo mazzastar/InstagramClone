@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :posts do
+    resource :map
     resources :charges
     resources :likes do 
       collection do 

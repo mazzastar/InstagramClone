@@ -28,8 +28,11 @@
                       <%= link_to "♥ #{post.likes.count}", post_likes_path(post), :class => 'btn btn-lg btn-default btn-like'%>
                     <% end %>
 
-                     <%= link_to "Buy", new_post_charge_path(post), :class => 'btn btn-lg btn-default'%>
+                    <%= link_to "Buy", new_post_charge_path(post), :class => 'btn btn-lg btn-default'%>
 
+                    <% unless post.address.blank? %>
+                      <%= link_to "Map", post_map_path(post), :class => 'btn btn-lg btn-default'%>
+                    <% end %>
                   </footer>    
                 </article>
         

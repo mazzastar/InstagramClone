@@ -45,7 +45,7 @@ When(/^I attach "(.*?)" with "(.*?)"$/) do |field, filename|
   attach_file field, Rails.root.join("spec/img/#{filename}")
 end
 
-Then(/^I shoud see css "(.*?)"$/) do |arg1|
+Then(/^I should see css "(.*?)"$/) do |arg1|
   expect(page).to have_css 'img.uploaded-pic'
 end
 
