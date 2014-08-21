@@ -1,6 +1,3 @@
-Images
-----
-![](instagramclone/spec/img/Sam.jpg)
 
 Instagram-Clone
 ----
@@ -17,7 +14,7 @@ What still needs to be done
 
 Heroku
 ----
-[Pizza Poser on Heroku]
+[Instagram on Heroku]
 Technologies used
 ----
 - Ruby
